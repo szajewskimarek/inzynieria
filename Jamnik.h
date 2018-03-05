@@ -14,11 +14,24 @@
 #define _JAMNIK_H
 
 #include "Pies.h"
+#include <iostream>
+using namespace std;
 
 class Jamnik : public Pies {
 public:
 	double w;
 	int test3(int x);
+	
+	Jamnik() {
+	w = w++;
+	cout << "Utworzono Jamnika nr " << w << endl;
+}
 };
+
+int main()
+{
+	Jamnik pierwszy = Jamnik();
+}
+
 
 #endif  //_JAMNIK_H
